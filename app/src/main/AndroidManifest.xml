@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
+    <uses-permission android:name="android.permission.USE_BIOMETRIC" />
+    <uses-permission android:name="android.permission.SCHEDULE_EXACT_ALARM" />
+    <uses-permission android:name="android.permission.USE_EXACT_ALARM" />
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.MyExamApp"
+        tools:targetApi="31">
+        <activity
+            android:name=".UploadQuestionsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".MainTestActivity"
+            android:exported="false" />
+        <activity
+            android:name=".student.StudentScheduledTestsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ScheduledTestsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".UploadQuizActivity"
+            android:exported="false" />
+        <activity
+            android:name=".student.StudentDashboardActivity"
+            android:exported="false" />
+        <activity
+            android:name=".teacher.TeacherDashboardActivity"
+            android:exported="false" />
+        <activity
+            android:name=".DumbActivity"
+            android:exported="false" />
+        <activity
+            android:name=".AddQuestionActivity"
+            android:exported="false" />
+        <activity
+            android:name=".QuestionActivity"
+            android:exported="false" />
+        <activity
+            android:name=".SetsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".teacher.TeacherMainActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ScoreActivityA"
+            android:exported="false"
+            android:noHistory="false" />
+        <activity
+            android:name=".QuestionsActivityA"
+            android:exported="false" />
+        <activity
+            android:name=".SetsActivityA"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="true"
+            android:noHistory="true" />
+        <activity
+            android:name=".auth.SignUpActivity"
+            android:exported="false"
+            android:noHistory="true"
+            android:parentActivityName=".home.ParentActivity" />
+        <activity
+            android:name=".auth.LoginActivity"
+            android:exported="true"
+            android:noHistory="false"
+            android:parentActivityName=".home.ParentActivity" />
+        <activity
+            android:name=".home.HomeScreen"
+            android:exported="false"
+            android:noHistory="false" />
+        <activity
+            android:name=".user.DashboardActivity"
+            android:exported="false"
+            android:noHistory="false" />
+        <activity
+            android:name=".user.UpdateProfile"
+            android:exported="false"
+            android:noHistory="false" />
+        <activity
+            android:name=".onboarding.NavigationActivity"
+            android:exported="true"
+            android:noHistory="true" />
+        <activity
+            android:name=".onboarding.GetStarted"
+            android:exported="false"
+            android:noHistory="true" />
+        <activity
+            android:name=".user.EditProfile"
+            android:exported="false"
+            android:noHistory="false"
+            android:parentActivityName=".user.UpdateProfile" />
+        <activity
+            android:name=".home.ParentActivity"
+            android:exported="true"
+            android:noHistory="false">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".pdf.PdfReportGenerator"
+            android:exported="true"
+            android:noHistory="false"
+            android:parentActivityName=".home.HomeScreen" />
+        <activity
+            android:name=".teacher.AddClassNotes"
+            android:exported="true"
+            android:parentActivityName=".home.HomeScreen" />
+        <activity
+            android:name=".student.ClassNotesActivity"
+            android:exported="true">
+
+            <!-- <intent-filter> -->
+            <!-- <action android:name="android.intent.action.MAIN" /> -->
+
+
+            <!-- <category android:name="android.intent.category.LAUNCHER" /> -->
+            <!-- </intent-filter> -->
+        </activity>
+        <activity
+            android:name=".student.ViewPdfActivity"
+            android:exported="false"
+            android:noHistory="true"
+            android:parentActivityName=".student.ClassNotesActivity" />
+    </application>
+
+</manifest>

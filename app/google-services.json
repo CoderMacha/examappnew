@@ -1,0 +1,30 @@
+{
+  "project_info": {
+    "project_number": "954705591098",
+    "firebase_url": "https://myexamapp-f38bd-default-rtdb.firebaseio.com",
+    "project_id": "myexamapp-f38bd",
+    "storage_bucket": "myexamapp-f38bd.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:954705591098:android:a5f49fe0751cd25d956e03",
+        "android_client_info": {
+          "package_name": "com.example.myexamapp"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDVVFr67CHgiwDrjC-seX52jN1DeGv51Cs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

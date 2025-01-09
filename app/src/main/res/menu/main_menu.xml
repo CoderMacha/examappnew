@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:title="@string/home">
+        <menu>
+            <group android:checkableBehavior="single">
+
+                <item
+                    android:id="@+id/nav_home"
+                    android:icon="@drawable/ic_home"
+                    android:title="@string/home" />
+
+                <item
+                    android:id="@+id/nav_dashboard"
+                    android:icon="@drawable/baseline_dashboard_24"
+                    android:title="@string/dashboard" />
+            </group>
+        </menu>
+    </item>
+
+    <item android:title="Settings">
+        <menu>
+            <group android:checkableBehavior="single">
+                <item
+                    android:id="@+id/nav_update_profile"
+                    android:icon="@drawable/baseline_face_24"
+                    android:title="@string/profile" />
+            </group>
+        </menu>
+    </item>
+
+
+</menu>
